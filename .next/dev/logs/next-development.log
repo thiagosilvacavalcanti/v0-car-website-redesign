@@ -1,0 +1,142 @@
+[00:00:01.686] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:01.920] Server  LOG      ✓ Ready in 1413ms
+[00:00:05.829] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.085] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:06.085] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/auth/login","route":"/auth/login"}
+[00:00:06.085] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765276046696}
+[00:00:06.085] Browser WARN    Image with src "/sml-logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:01:32.035] Browser LOG     [v0] Attempting login with email: admin@sml.com
+[00:01:32.399] Browser LOG     [v0] Login response: {"data":{"session":null,"user":null},"error":{"__isAuthError":true,"code":"invalid_credentials","name":"AuthApiError","status":400}}
+[00:01:32.399] Browser LOG     [v0] Login error: Invalid login credentials
+[00:08:49.929] Browser LOG     [v0] Attempting login with email: thiago_cavalcanti@live.com
+[00:08:52.096] Browser LOG     [v0] Login response: {"data":{"session":null,"user":null},"error":{"__isAuthError":true,"code":"invalid_credentials","name":"AuthApiError","status":400}}
+[00:08:52.096] Browser LOG     [v0] Login error: Invalid login credentials
+[00:10:41.169] Browser LOG     [v0] Attempting login with email: admin@sml.com
+[00:10:43.364] Browser LOG     [v0] Login response: {"data":{"session":{"access_token":"eyJhbGciOiJIUzI1NiIsImtpZCI6IkpNcEhJM0MyampRcjdEd0giLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29jYXp2cmNtdm52a3d4dXd6cWRsLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIzMzQ3ZmQwYi1jNjIwLTQzZDMtOGMyYS0zOWVjMDAxMDc4MzUiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzY1MjgwMjgyLCJpYXQiOjE3NjUyNzY2ODIsImVtYWlsIjoiYWRtaW5Ac21sLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWV9LCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImFhbCI6ImFhbDEiLCJhbXIiOlt7Im1ldGhvZCI6InBhc3N3b3JkIiwidGltZXN0YW1wIjoxNzY1Mjc2NjgyfV0sInNlc3Npb25faWQiOiI2MGI0NmY4NS1hOTczLTRiZjYtODQ3Ni03NjA3YWI4NjEzOWYiLCJpc19hbm9ueW1vdXMiOmZhbHNlfQ.LMg8EU99Va9lcWedSfNnYN3AcDGuAtxYL7ewKSROaaY","expires_at":1765280282,"expires_in":3600,"refresh_token":"c4ccxfy7kdkt","token_type":"bearer","user":{"app_metadata":{"provider":"email","providers":"[Array]"},"aud":"authenticated","confirmed_at":"2025-12-09T10:37:32.055299Z","created_at":"2025-12-09T10:37:32.047484Z","email":"admin@sml.com","email_confirmed_at":"2025-12-09T10:37:32.055299Z","id":"3347fd0b-c620-43d3-8c2a-39ec00107835","identities":["[Object]"],"is_anonymous":false,"last_sign_in_at":"2025-12-09T10:38:02.695958542Z","phone":"","role":"authenticated","updated_at":"2025-12-09T10:38:02.710157Z","user_metadata":{"email_verified":true}},"weak_password":null},"user":{"app_metadata":{"provider":"email","providers":["email"]},"aud":"authenticated","confirmed_at":"2025-12-09T10:37:32.055299Z","created_at":"2025-12-09T10:37:32.047484Z","email":"admin@sml.com","email_confirmed_at":"2025-12-09T10:37:32.055299Z","id":"3347fd0b-c620-43d3-8c2a-39ec00107835","identities":[{"created_at":"2025-12-09T10:37:32.052805Z","email":"admin@sml.com","id":"3347fd0b-c620-43d3-8c2a-39ec00107835","identity_data":"[Object]","identity_id":"b5b3a256-5b75-41f8-a8f1-19a8453d442f","last_sign_in_at":"2025-12-09T10:37:32.052755Z","provider":"email","updated_at":"2025-12-09T10:37:32.052805Z","user_id":"3347fd0b-c620-43d3-8c2a-39ec00107835"}],"is_anonymous":false,"last_sign_in_at":"2025-12-09T10:38:02.695958542Z","phone":"","role":"authenticated","updated_at":"2025-12-09T10:38:02.710157Z","user_metadata":{"email_verified":true}}},"error":null}
+[00:10:43.364] Browser LOG     [v0] Login successful, redirecting to admin
+[00:10:48.276] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765276688979}
+[00:11:50.712] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/vehicles/new color: rgb(120, 120, 120) color: inherit {"dp":"/admin/vehicles/new","o":"http://localhost:3000/admin/vehicles/new","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765276751402}
+[00:13:26.677] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765276847375}
+[00:14:48.335] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765276929057}
+[00:32:40.590] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:40.920] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:32:40.920] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:32:40.920] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765278001678}
+[00:34:32.679] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:32.864] Browser WARN    Image with src "/sml-logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:34:32.864] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:34:32.864] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/auth/login","route":"/auth/login"}
+[00:34:32.864] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765278113624}
+[00:34:34.786] Browser LOG     [v0] Attempting login with email: admin@sml.com
+[00:34:35.067] Browser LOG     [v0] Login response: {"data":{"session":{"access_token":"eyJhbGciOiJIUzI1NiIsImtpZCI6IkpNcEhJM0MyampRcjdEd0giLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29jYXp2cmNtdm52a3d4dXd6cWRsLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIzMzQ3ZmQwYi1jNjIwLTQzZDMtOGMyYS0zOWVjMDAxMDc4MzUiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzY1MjgxNzE1LCJpYXQiOjE3NjUyNzgxMTUsImVtYWlsIjoiYWRtaW5Ac21sLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWV9LCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImFhbCI6ImFhbDEiLCJhbXIiOlt7Im1ldGhvZCI6InBhc3N3b3JkIiwidGltZXN0YW1wIjoxNzY1Mjc4MTE1fV0sInNlc3Npb25faWQiOiI4NjllZmU1ZS05MTg1LTRlNzQtYTM2Mi1jMGJhMDFjYzRlOGQiLCJpc19hbm9ueW1vdXMiOmZhbHNlfQ.aFky7E6l23e8gR9qlVfRwHsH6dF3XftF5lKMr0Ow1lU","expires_at":1765281715,"expires_in":3600,"refresh_token":"q52qst34qiam","token_type":"bearer","user":{"app_metadata":{"provider":"email","providers":"[Array]"},"aud":"authenticated","confirmed_at":"2025-12-09T10:37:32.055299Z","created_at":"2025-12-09T10:37:32.047484Z","email":"admin@sml.com","email_confirmed_at":"2025-12-09T10:37:32.055299Z","id":"3347fd0b-c620-43d3-8c2a-39ec00107835","identities":["[Object]"],"is_anonymous":false,"last_sign_in_at":"2025-12-09T11:01:55.88832007Z","phone":"","role":"authenticated","updated_at":"2025-12-09T11:01:55.891253Z","user_metadata":{"email_verified":true}},"weak_password":null},"user":{"app_metadata":{"provider":"email","providers":["email"]},"aud":"authenticated","confirmed_at":"2025-12-09T10:37:32.055299Z","created_at":"2025-12-09T10:37:32.047484Z","email":"admin@sml.com","email_confirmed_at":"2025-12-09T10:37:32.055299Z","id":"3347fd0b-c620-43d3-8c2a-39ec00107835","identities":[{"created_at":"2025-12-09T10:37:32.052805Z","email":"admin@sml.com","id":"3347fd0b-c620-43d3-8c2a-39ec00107835","identity_data":"[Object]","identity_id":"b5b3a256-5b75-41f8-a8f1-19a8453d442f","last_sign_in_at":"2025-12-09T10:37:32.052755Z","provider":"email","updated_at":"2025-12-09T10:37:32.052805Z","user_id":"3347fd0b-c620-43d3-8c2a-39ec00107835"}],"is_anonymous":false,"last_sign_in_at":"2025-12-09T11:01:55.88832007Z","phone":"","role":"authenticated","updated_at":"2025-12-09T11:01:55.891253Z","user_metadata":{"email_verified":true}}},"error":null}
+[00:34:35.067] Browser LOG     [v0] Login successful, redirecting to admin
+[00:34:35.489] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765278116249}
+[00:34:40.205] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:40.447] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:34:40.447] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:34:40.447] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765278121198}
+[00:35:53.658] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:53.814] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:35:53.814] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:35:53.814] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765278194585}
+[00:47:44.520] Server  LOG      ✓ Compiled in 103ms
+[00:48:12.101] Server  LOG      ✓ Compiled in 92ms
+[00:48:12.567] Server  ERROR   C:\Users\Th Mano\Desktop\v0-car-website-redesign\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:48:12.572] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button data-slot="button" className=... onClick={function handleClick} children=...>
+                                                   ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:48:13.147] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
+  <button data-slot="button" className=... onClick={function handleClick} children=...>
+                                                   ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:48:26.469] Server  LOG      ✓ Compiled in 84ms
+[00:48:28.426] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:48:30.031] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:48:30.031] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:48:30.031] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#sobre color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#sobre","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765278950206}
+[00:48:49.020] Server  LOG      ✓ Compiled in 86ms
+[00:49:04.868] Server  LOG      ✓ Compiled in 93ms
+[00:49:20.590] Server  LOG      ✓ Compiled in 92ms
+[00:49:20.946] Server  ERROR   C:\Users\Th Mano\Desktop\v0-car-website-redesign\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:49:20.950] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button data-slot="button" className=... onClick={function handleClick} children=...>
+                                                   ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:49:21.531] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
+  <button data-slot="button" className=... onClick={function handleClick} children=...>
+                                                   ^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:50:22.031] Browser ERROR   ./Desktop/v0-car-website-redesign/components/header.tsx:6:1
+Ecmascript file had an error
+  4 | import { Phone, Clock, Menu } from "lucide-react"
+  5 | import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+> 6 | 'use client'
+    | ^^^^^^^^^^^^
+  7 | export function Header() {
+  8 |   const navItems = [
+  9 |     { name: "Estoque", href: "#estoque" },
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+
+Import trace:
+  Server Component:
+    ./Desktop/v0-car-website-redesign/components/header.tsx
+    ./Desktop/v0-car-website-redesign/app/page.tsx
+[00:50:54.634] Server  LOG      ✓ Compiled in 174ms
+[00:50:54.663] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:50:57.489] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:50:58.065] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:50:58.065] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:50:58.065] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#sobre color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#sobre","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765279098833}
+[00:54:00.172] Server  LOG      ✓ Compiled in 195ms
+[00:54:37.535] Server  LOG      ✓ Compiled in 82ms
+[00:55:11.818] Server  LOG      ✓ Compiled in 75ms
+[00:55:41.206] Server  LOG      ✓ Compiled in 105ms
+[00:55:51.534] Server  LOG      ✓ Compiled in 59ms
+[00:57:06.619] Server  LOG      ✓ Compiled in 133ms
+[00:57:53.060] Server  LOG      ✓ Compiled in 69ms
+[00:58:12.936] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:58:13.519] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:58:13.519] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin","route":"/admin"}
+[00:58:13.519] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765279534250}
+[00:58:51.252] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/vehicles/new color: rgb(120, 120, 120) color: inherit {"dp":"/admin/vehicles/new","o":"http://localhost:3000/admin/vehicles/new","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765279572035}
+[00:59:32.743] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765279613535}
+[00:59:38.376] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765279619147}
+[01:02:17.566] Server  LOG      ✓ Compiled in 64ms
+[01:02:25.934] Server  LOG      ✓ Compiled in 73ms
+[01:02:36.048] Server  LOG      ✓ Compiled in 58ms
+[01:03:24.335] Server  LOG      ✓ Compiled in 93ms
+[01:03:40.659] Server  LOG      ✓ Compiled in 89ms
+[01:03:48.902] Server  LOG      ✓ Compiled in 55ms
+[01:04:16.780] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:17.127] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:04:17.127] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin","route":"/admin"}
+[01:04:17.127] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765279897922}
+[01:04:17.298] Browser WARN    Image with src "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnDSKcN5Zb-CUaKbZm0wPe9oftlDDUVgOEpQ&s" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:04:36.787] Server  LOG      ✓ Compiled in 63ms
+[01:04:43.531] Server  LOG      ✓ Compiled in 75ms
+[01:04:56.459] Server  ERROR   C:\Users\Th Mano\Desktop\v0-car-website-redesign\.next\dev\server\chunks\ssr\936e6_next_dist_7328a12d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:56.460] Server  ERROR   C:\Users\Th Mano\Desktop\v0-car-website-redesign\.next\dev\server\chunks\ssr\[root-of-the-server]__ca44052b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:04:56.463] Server  WARN    Error: Route "/admin/vehicles/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:04:56.793] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/vehicles/98c6945b-e792-44b2-b65c-34d28da59555 color: rgb(120, 120, 120) color: inherit {"dp":"/admin/vehicles/[id]","o":"http://localhost:3000/admin/vehicles/98c6945b-e792-44b2-b65c-34d28da59555","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765279937592}
+[01:05:00.714] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765279941510}
+[01:05:31.646] Server  LOG      ✓ Compiled in 88ms
+[01:05:40.878] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765279981674}
+[01:06:41.049] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:06:41.309] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:06:41.309] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:06:41.309] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765280042106}
+[01:23:43.889] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:23:44.124] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:23:44.124] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/admin","route":"/admin"}
+[01:23:44.124] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin color: rgb(120, 120, 120) color: inherit {"dp":"/admin","o":"http://localhost:3000/admin","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765281064937}
+[01:23:44.504] Browser WARN    Image with src "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnDSKcN5Zb-CUaKbZm0wPe9oftlDDUVgOEpQ&s" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:23:53.573] Server  ERROR   C:\Users\Th Mano\Desktop\v0-car-website-redesign\.next\dev\server\chunks\ssr\936e6_next_dist_7328a12d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:23:53.574] Server  ERROR   C:\Users\Th Mano\Desktop\v0-car-website-redesign\.next\dev\server\chunks\ssr\[root-of-the-server]__ca44052b._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:23:53.574] Server  WARN    Error: Route "/admin/vehicles/[id]" used `params.id`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:23:53.831] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/vehicles/12fadae1-3f15-4e9e-a8fb-d47c3aa92d46 color: rgb(120, 120, 120) color: inherit {"dp":"/admin/vehicles/[id]","o":"http://localhost:3000/admin/vehicles/12fadae1-3f15-4e9e-a8fb-d47c3aa92d46","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765281074644}

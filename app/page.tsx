@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
-        <VehicleSearch />
+        {/* <VehicleSearch /> */}
         <BrandShowcase />
         <VehicleGrid />
         <SellYourCar />

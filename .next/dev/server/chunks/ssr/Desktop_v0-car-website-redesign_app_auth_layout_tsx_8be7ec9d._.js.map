@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Th%20Mano/Desktop/v0-car-website-redesign/app/auth/layout.tsx"],"sourcesContent":["import type React from \"react\"\r\n\r\nexport default function AuthLayout({\r\n  children,\r\n}: {\r\n  children: React.ReactNode\r\n}) {\r\n  return <>{children}</>\r\n}\r\n"],"names":[],"mappings":";;;;;;AAEe,SAAS,WAAW,EACjC,QAAQ,EAGT;IACC,qBAAO;kBAAG;;AACZ"}}]
+}

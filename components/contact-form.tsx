@@ -87,7 +87,7 @@ export function ContactForm() {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button variant="outline" size="lg">
+        <Button variant="outline" size="lg"  className="text-black">
           <MessageSquare className="mr-2 h-5 w-5" />
           Entre em Contato
         </Button>

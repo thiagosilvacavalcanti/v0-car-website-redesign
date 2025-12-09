@@ -26,7 +26,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-4">Links Rápidos</h3>
+            <h3 className="text-lg font-bold mb-4">ápidos</h3>
             <ul className="space-y-2">
               <li>
                 <Link
@@ -53,12 +53,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#seguro"
-                  className="text-secondary-foreground/70 hover:text-secondary-foreground transition-colors"
-                >
-                  Seguro
-                </Link>
+          
               </li>
             </ul>
           </div>

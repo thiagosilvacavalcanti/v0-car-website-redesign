@@ -1,0 +1,41 @@
+{
+  "version": 3,
+  "middleware": {
+    "/": {
+      "files": [
+        "server/edge/chunks/Desktop_v0-car-website-redesign_49df7d2d._.js",
+        "server/edge/chunks/936e6_@supabase_realtime-js_dist_module_714f2272._.js",
+        "server/edge/chunks/936e6_@supabase_storage-js_dist_module_2ff16ba4._.js",
+        "server/edge/chunks/936e6_@supabase_auth-js_dist_module_eac1cac6._.js",
+        "server/edge/chunks/936e6_eeef6369._.js",
+        "server/edge/chunks/[root-of-the-server]__c8feb952._.js",
+        "server/edge/chunks/turbopack-Desktop_v0-car-website-redesign_edge-wrapper_5778ba67.js"
+      ],
+      "name": "middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/admin(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(\\\\.json)?[\\/#\\?]?$",
+          "originalSource": "/admin/:path*"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/((?!_next\\/static|_next\\/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*))(\\\\.json)?[\\/#\\?]?$",
+          "originalSource": "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "Dx/SjwITAWGnTQKDb4QnlVoGyIiGtgSaUfqsiL2v3KY=",
+        "__NEXT_PREVIEW_MODE_ID": "6f20777483a55fed0fcf5fb3e0fe24a2",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "13572c6fc9b74063ff389bbd62602c0cac81537f4c8810871e6091144260ff3c",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "3c0fe5853d1ecbf73390c01d4341ae1770d4e64523a7957e913b6082c5dba3c1"
+      }
+    }
+  },
+  "sortedMiddleware": [
+    "/"
+  ],
+  "functions": {}
+}

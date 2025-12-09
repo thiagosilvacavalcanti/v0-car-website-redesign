@@ -40,14 +40,14 @@ export function AdminHeader({ user }: { user: User }) {
         </div>
         
         <div className="flex items-center gap-4">
-          <span className="text-sm text-neutral-light">{user.email}</span>
+          <span className="text-black text-sm text-neutral-light">{user.email}</span>
           <Link href="/">
-            <Button variant="outline" size="sm" className="gap-2">
+            <Button variant="outline" size="sm" className="text-black gap-2">
               <Home className="h-4 w-4" />
               Ver Site
             </Button>
           </Link>
-          <Button variant="outline" size="sm" onClick={handleLogout} className="gap-2">
+          <Button variant="outline" size="sm" onClick={handleLogout} className="text-black gap-2">
             <LogOut className="h-4 w-4" />
             Sair
           </Button>

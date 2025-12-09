@@ -10,7 +10,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "SML Veículos - Multimarcas em São Paulo",
-  description: "Sua loja de veículos multimarcas em São Paulo. Venda, financiamento e seguros.",
+  description: "Sua loja de veículos multimarcas em São Paulo. Venda e financiamento.",
   generator: "v0.app",
   icons: {
     icon: [

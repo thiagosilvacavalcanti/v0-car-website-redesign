@@ -22,11 +22,13 @@ export function HeroSection() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="text-lg px-8 py-6">
+               <a href="#estoque" >
+            <Button  style={{ cursor: 'pointer' }} size="lg" className="text-lg px-8 py-6">
               Ver Estoque
               <ChevronRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6">
+              </a>
+            <Button size="lg" variant="outline" className="text-black text-lg px-8 py-6">
               Venda seu Carro
             </Button>
           </div>

@@ -1,17 +1,20 @@
+'use client'  
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Phone, Clock, Menu } from "lucide-react"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-
 export function Header() {
   const navItems = [
     { name: "Estoque", href: "#estoque" },
     { name: "Venda seu Carro", href: "#venda" },
     { name: "Financie", href: "#financie" },
-    { name: "Seguro", href: "#seguro" },
-    { name: "Sobre", href: "#sobre" },
   ]
+
+  const phoneNumber = "5511958042257"
+    const handleClick = () => {
+    window.open(`https://wa.me/${phoneNumber}`, "_blank")
+  }
 
   return (
     <header className="w-full border-b border-border bg-card">
@@ -53,7 +56,7 @@ export function Header() {
           </nav>
 
           <div className="hidden lg:flex items-center gap-4">
-            <Button variant="outline" size="lg">
+            <Button  onClick={handleClick}  variant="outline" size="lg">
               <Phone className="h-4 w-4 mr-2" />
               Fale Conosco
             </Button>

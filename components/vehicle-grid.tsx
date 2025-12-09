@@ -68,7 +68,7 @@ export async function VehicleGrid() {
               </CardContent>
               
               <CardFooter className="p-6 pt-0 gap-2">
-                <Button className="flex-1">Ver Detalhes</Button>
+                {/* <Button className="flex-1">Ver Detalhes</Button> */}
                 <Button variant="outline" className="flex-1">WhatsApp</Button>
               </CardFooter>
             </Card>
