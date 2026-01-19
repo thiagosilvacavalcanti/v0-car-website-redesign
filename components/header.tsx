@@ -17,7 +17,7 @@ export function Header() {
   }
 
   return (
-    <header className="w-full border-b border-border bg-card">
+    <header className="w-full border-b border-border bg-black text-white">
       <div className="bg-secondary text-secondary-foreground py-2">
         <div className="container mx-auto px-4 flex items-center justify-between text-sm">
           <div className="flex items-center gap-2">
@@ -40,7 +40,7 @@ export function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
-            <Image src="/sml-logo.jpeg" alt="SML Veículos" width={180} height={60} className="h-14 w-auto" priority />
+            <Image src="/sml-logo.jpeg" alt="SML Veículos" width={180} height={60} className="h-14 w-auto brightness-0 invert" priority />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-6">
@@ -48,7 +48,7 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-foreground hover:text-primary transition-colors font-medium"
+                className="text-white hover:text-primary transition-colors font-medium"
               >
                 {item.name}
               </Link>
@@ -56,7 +56,7 @@ export function Header() {
           </nav>
 
           <div className="hidden lg:flex items-center gap-4">
-            <Button  onClick={handleClick}  variant="outline" size="lg">
+            <Button  onClick={handleClick}  variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black">
               <Phone className="h-4 w-4 mr-2" />
               Fale Conosco
             </Button>
@@ -64,22 +64,22 @@ export function Header() {
 
           <Sheet>
             <SheetTrigger asChild className="lg:hidden">
-              <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
+              <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
+                <Menu className="h-6 w-6 text-[#ffcc00]" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px]">
+            <SheetContent side="right" className="w-[300px] bg-black text-white border-white/20">
               <nav className="flex flex-col gap-4 mt-8">
                 {navItems.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="text-lg font-medium hover:text-primary transition-colors"
+                    className="text-lg font-medium hover:text-primary transition-colors text-white"
                   >
                     {item.name}
                   </Link>
                 ))}
-                <Button className="mt-4">
+                <Button className="mt-4 bg-[#ffcc00] text-black hover:bg-[#ffcc00]/90">
                   <Phone className="h-4 w-4 mr-2" />
                   Fale Conosco
                 </Button>

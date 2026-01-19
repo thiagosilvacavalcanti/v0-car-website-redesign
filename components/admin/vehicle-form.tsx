@@ -70,6 +70,7 @@ export function VehicleForm({ vehicle }: VehicleFormProps) {
       }
 
       if (vehicle) {
+        // Update all fields including those that might have been missing
         const { error } = await supabase.from("vehicles").update(vehicleData).eq("id", vehicle.id)
 
         if (error) throw error
