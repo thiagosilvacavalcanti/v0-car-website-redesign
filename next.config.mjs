@@ -10,7 +10,8 @@ const nextConfig = {
     "*.replit.dev",
     "*.repl.co",
     "127.0.0.1",
-    "localhost"
+    "localhost",
+    "24238bb9-2a63-4815-b431-6a2411fd895a-00-fg1wrdnc06gi.riker.replit.dev"
   ],
 }
 

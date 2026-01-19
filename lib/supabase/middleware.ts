@@ -24,7 +24,11 @@ export const updateSession = async (request: NextRequest) => {
             request,
           })
           cookiesToSet.forEach(({ name, value, options }) =>
-            response.cookies.set(name, value, options)
+            response.cookies.set(name, value, {
+              ...options,
+              sameSite: 'lax',
+              secure: true,
+            })
           )
         },
       },
