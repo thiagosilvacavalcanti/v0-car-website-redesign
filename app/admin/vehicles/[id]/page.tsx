@@ -6,8 +6,9 @@ import { VehicleForm } from '@/components/admin/vehicle-form'
 import { ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
 
-export default async function EditVehiclePage({ params }: { params: { id: string } }) {
+export default async function EditVehiclePage({ params }: { params: Promise<{ id: string }> }) {
   const cookieStore = await cookies()
+  const resolvedParams = await params
   
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -37,7 +38,7 @@ export default async function EditVehiclePage({ params }: { params: { id: string
   const { data: vehicle } = await supabase
     .from('vehicles')
     .select('*')
-    .eq('id', params.id)
+    .eq('id', resolvedParams.id)
     .single()
 
   if (!vehicle) {
