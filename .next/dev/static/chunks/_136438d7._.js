@@ -1532,19 +1532,20 @@ function VehicleDetailsModal({ vehicle, isOpen, onClose }) {
         open: isOpen,
         onOpenChange: onClose,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogContent"], {
-            className: "max-w-4xl max-h-[90vh] overflow-y-auto p-0 border-none bg-black text-white",
+            className: "max-w-4xl max-h-[95vh] overflow-y-auto p-0 border-none bg-black text-white sm:rounded-xl",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "grid grid-cols-1 md:grid-cols-2",
+                className: "flex flex-col",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative h-[300px] md:h-full min-h-[400px] bg-zinc-900",
+                        className: "relative w-full aspect-video md:aspect-[16/9] lg:aspect-[21/9] bg-zinc-900 overflow-hidden",
                         children: allImages.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                     src: allImages[currentImageIndex],
                                     alt: `${vehicle.brand} ${vehicle.model}`,
                                     fill: true,
-                                    className: "object-cover"
+                                    className: "object-cover",
+                                    priority: true
                                 }, void 0, false, {
                                     fileName: "[project]/components/vehicle-details-modal.tsx",
                                     lineNumber: 78,
@@ -1554,46 +1555,46 @@ function VehicleDetailsModal({ vehicle, isOpen, onClose }) {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             onClick: prevImage,
-                                            className: "absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white p-2 rounded-full transition-colors",
+                                            className: "absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-1.5 sm:p-2 rounded-full transition-colors z-10",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeft$3e$__["ChevronLeft"], {
-                                                className: "h-6 w-6"
+                                                className: "h-5 w-5 sm:h-6 sm:w-6"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/vehicle-details-modal.tsx",
-                                                lineNumber: 90,
+                                                lineNumber: 91,
                                                 columnNumber: 23
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/vehicle-details-modal.tsx",
-                                            lineNumber: 86,
+                                            lineNumber: 87,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             onClick: nextImage,
-                                            className: "absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white p-2 rounded-full transition-colors",
+                                            className: "absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-1.5 sm:p-2 rounded-full transition-colors z-10",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
-                                                className: "h-6 w-6"
+                                                className: "h-5 w-5 sm:h-6 sm:w-6"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/vehicle-details-modal.tsx",
-                                                lineNumber: 96,
+                                                lineNumber: 97,
                                                 columnNumber: 23
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/vehicle-details-modal.tsx",
-                                            lineNumber: 92,
+                                            lineNumber: 93,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2",
+                                            className: "absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5 z-10",
                                             children: allImages.map((_, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: `h-2 w-2 rounded-full ${index === currentImageIndex ? "bg-primary" : "bg-white/50"}`
+                                                    className: `h-1.5 w-1.5 rounded-full transition-all ${index === currentImageIndex ? "bg-primary w-4" : "bg-white/30"}`
                                                 }, index, false, {
                                                     fileName: "[project]/components/vehicle-details-modal.tsx",
-                                                    lineNumber: 100,
+                                                    lineNumber: 101,
                                                     columnNumber: 25
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/components/vehicle-details-modal.tsx",
-                                            lineNumber: 98,
+                                            lineNumber: 99,
                                             columnNumber: 21
                                         }, this)
                                     ]
@@ -1604,7 +1605,7 @@ function VehicleDetailsModal({ vehicle, isOpen, onClose }) {
                             children: "Sem imagens disponíveis"
                         }, void 0, false, {
                             fileName: "[project]/components/vehicle-details-modal.tsx",
-                            lineNumber: 112,
+                            lineNumber: 113,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
@@ -1613,40 +1614,42 @@ function VehicleDetailsModal({ vehicle, isOpen, onClose }) {
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "p-6 md:p-8 space-y-6",
+                        className: "p-5 sm:p-8 space-y-6 sm:space-y-8",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogHeader"], {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "space-y-2",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex items-center gap-2 mb-2",
+                                                className: "flex items-center gap-2",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
-                                                        className: "bg-[#ffcc00] text-black hover:bg-[#ffcc00]/90",
-                                                        children: "Disponível"
+                                                        className: "bg-[#ffcc00] text-black hover:bg-[#ffcc00]/90 font-bold",
+                                                        children: "ESTOQUE"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/vehicle-details-modal.tsx",
-                                                        lineNumber: 123,
+                                                        lineNumber: 124,
                                                         columnNumber: 19
                                                     }, this),
-                                                    vehicle.year >= 2023 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
+                                                    vehicle.year >= 2024 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
                                                         variant: "outline",
                                                         className: "border-white text-white",
-                                                        children: "Novo"
+                                                        children: "NOVO"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/vehicle-details-modal.tsx",
-                                                        lineNumber: 127,
+                                                        lineNumber: 128,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/vehicle-details-modal.tsx",
-                                                lineNumber: 122,
+                                                lineNumber: 123,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogTitle"], {
-                                                className: "text-3xl font-bold",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                className: "text-3xl sm:text-4xl font-black uppercase tracking-tighter",
                                                 children: [
                                                     vehicle.brand,
                                                     " ",
@@ -1654,291 +1657,305 @@ function VehicleDetailsModal({ vehicle, isOpen, onClose }) {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/vehicle-details-modal.tsx",
-                                                lineNumber: 132,
+                                                lineNumber: 133,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-center gap-4 text-zinc-400 font-medium",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        children: vehicle.year
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/vehicle-details-modal.tsx",
+                                                        lineNumber: 137,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "h-1 w-1 bg-zinc-700 rounded-full"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/vehicle-details-modal.tsx",
+                                                        lineNumber: 138,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        children: [
+                                                            vehicle.mileage.toLocaleString("pt-BR"),
+                                                            " KM"
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/vehicle-details-modal.tsx",
+                                                        lineNumber: 139,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/vehicle-details-modal.tsx",
+                                                lineNumber: 136,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/vehicle-details-modal.tsx",
-                                        lineNumber: 121,
+                                        lineNumber: 122,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-4xl font-bold text-[#ffcc00] mt-4",
-                                        children: new Intl.NumberFormat("pt-BR", {
-                                            style: "currency",
-                                            currency: "BRL"
-                                        }).format(vehicle.price)
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-left sm:text-right",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-4xl sm:text-5xl font-black text-[#ffcc00] tracking-tighter",
+                                            children: new Intl.NumberFormat("pt-BR", {
+                                                style: "currency",
+                                                currency: "BRL"
+                                            }).format(vehicle.price)
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/vehicle-details-modal.tsx",
+                                            lineNumber: 143,
+                                            columnNumber: 17
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/vehicle-details-modal.tsx",
-                                        lineNumber: 136,
+                                        lineNumber: 142,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/vehicle-details-modal.tsx",
-                                lineNumber: 120,
+                                lineNumber: 121,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "grid grid-cols-3 gap-4 py-6 border-y border-white/10",
+                                className: "grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 sm:p-6 bg-zinc-900/50 rounded-2xl border border-white/5",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex flex-col items-center text-center gap-1",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
-                                                className: "h-5 w-5 text-[#ffcc00]"
+                                                className: "h-5 w-5 text-[#ffcc00] mb-1"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/vehicle-details-modal.tsx",
-                                                lineNumber: 146,
+                                                lineNumber: 154,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-xs text-zinc-400 uppercase",
+                                                className: "text-[10px] text-zinc-500 uppercase font-bold tracking-widest",
                                                 children: "Ano"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/vehicle-details-modal.tsx",
-                                                lineNumber: 147,
+                                                lineNumber: 155,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "font-semibold",
+                                                className: "text-sm font-bold",
                                                 children: vehicle.year
                                             }, void 0, false, {
                                                 fileName: "[project]/components/vehicle-details-modal.tsx",
-                                                lineNumber: 148,
+                                                lineNumber: 156,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/vehicle-details-modal.tsx",
-                                        lineNumber: 145,
+                                        lineNumber: 153,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex flex-col items-center text-center gap-1",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$gauge$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Gauge$3e$__["Gauge"], {
-                                                className: "h-5 w-5 text-[#ffcc00]"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/vehicle-details-modal.tsx",
-                                                lineNumber: 151,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-xs text-zinc-400 uppercase",
-                                                children: "KM"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/vehicle-details-modal.tsx",
-                                                lineNumber: 152,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "font-semibold",
-                                                children: vehicle.mileage.toLocaleString("pt-BR")
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/vehicle-details-modal.tsx",
-                                                lineNumber: 153,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/vehicle-details-modal.tsx",
-                                        lineNumber: 150,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex flex-col items-center text-center gap-1",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$fuel$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Fuel$3e$__["Fuel"], {
-                                                className: "h-5 w-5 text-[#ffcc00]"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/vehicle-details-modal.tsx",
-                                                lineNumber: 158,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-xs text-zinc-400 uppercase",
-                                                children: "Tipo"
+                                                className: "h-5 w-5 text-[#ffcc00] mb-1"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/vehicle-details-modal.tsx",
                                                 lineNumber: 159,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "font-semibold",
-                                                children: vehicle.fuel_type
+                                                className: "text-[10px] text-zinc-500 uppercase font-bold tracking-widest",
+                                                children: "Quilometragem"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/vehicle-details-modal.tsx",
                                                 lineNumber: 160,
                                                 columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-sm font-bold",
+                                                children: vehicle.mileage.toLocaleString("pt-BR")
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/vehicle-details-modal.tsx",
+                                                lineNumber: 161,
+                                                columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/vehicle-details-modal.tsx",
-                                        lineNumber: 157,
+                                        lineNumber: 158,
                                         columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/vehicle-details-modal.tsx",
-                                lineNumber: 144,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "space-y-4",
-                                children: [
+                                    }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center gap-2 text-[#ffcc00]",
+                                        className: "flex flex-col items-center text-center gap-1",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$info$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Info$3e$__["Info"], {
-                                                className: "h-5 w-5"
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$fuel$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Fuel$3e$__["Fuel"], {
+                                                className: "h-5 w-5 text-[#ffcc00] mb-1"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/vehicle-details-modal.tsx",
+                                                lineNumber: 164,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-[10px] text-zinc-500 uppercase font-bold tracking-widest",
+                                                children: "Combustível"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/vehicle-details-modal.tsx",
+                                                lineNumber: 165,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-sm font-bold",
+                                                children: vehicle.fuel_type
                                             }, void 0, false, {
                                                 fileName: "[project]/components/vehicle-details-modal.tsx",
                                                 lineNumber: 166,
                                                 columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                className: "font-semibold",
-                                                children: "Informações do Veículo"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/vehicle-details-modal.tsx",
-                                                lineNumber: 167,
-                                                columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/vehicle-details-modal.tsx",
-                                        lineNumber: 165,
+                                        lineNumber: 163,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "grid grid-cols-2 gap-y-2 text-sm",
+                                        className: "flex flex-col items-center text-center gap-1",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-zinc-400",
-                                                children: "Câmbio:"
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$info$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Info$3e$__["Info"], {
+                                                className: "h-5 w-5 text-[#ffcc00] mb-1"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/vehicle-details-modal.tsx",
+                                                lineNumber: 169,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-[10px] text-zinc-500 uppercase font-bold tracking-widest",
+                                                children: "Câmbio"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/vehicle-details-modal.tsx",
                                                 lineNumber: 170,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-right font-medium",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-sm font-bold",
                                                 children: vehicle.transmission || "N/A"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/vehicle-details-modal.tsx",
                                                 lineNumber: 171,
                                                 columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-zinc-400",
-                                                children: "Cor:"
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/vehicle-details-modal.tsx",
+                                        lineNumber: 168,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/vehicle-details-modal.tsx",
+                                lineNumber: 152,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "grid grid-cols-1 sm:grid-cols-2 gap-8",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "space-y-4",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                className: "text-xs font-black uppercase tracking-[0.2em] text-zinc-500",
+                                                children: "Descrição"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/vehicle-details-modal.tsx",
-                                                lineNumber: 172,
+                                                lineNumber: 177,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-right font-medium",
-                                                children: vehicle.color || "N/A"
+                                                className: "text-sm text-zinc-300 leading-relaxed font-medium",
+                                                children: vehicle.description || "Veículo em excelente estado de conservação, revisado e com garantia SML Veículos."
                                             }, void 0, false, {
                                                 fileName: "[project]/components/vehicle-details-modal.tsx",
-                                                lineNumber: 173,
+                                                lineNumber: 178,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/vehicle-details-modal.tsx",
-                                        lineNumber: 169,
+                                        lineNumber: 176,
                                         columnNumber: 15
+                                    }, this),
+                                    vehicle.features && vehicle.features.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "space-y-4",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                className: "text-xs font-black uppercase tracking-[0.2em] text-zinc-500",
+                                                children: "Opcionais e Itens"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/vehicle-details-modal.tsx",
+                                                lineNumber: 185,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex flex-wrap gap-2",
+                                                children: vehicle.features.map((feature, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
+                                                        variant: "secondary",
+                                                        className: "bg-zinc-800 text-zinc-300 hover:bg-zinc-700 border-none px-3 py-1 text-[11px] font-bold",
+                                                        children: feature.toUpperCase()
+                                                    }, idx, false, {
+                                                        fileName: "[project]/components/vehicle-details-modal.tsx",
+                                                        lineNumber: 188,
+                                                        columnNumber: 23
+                                                    }, this))
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/vehicle-details-modal.tsx",
+                                                lineNumber: 186,
+                                                columnNumber: 19
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/vehicle-details-modal.tsx",
+                                        lineNumber: 184,
+                                        columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/vehicle-details-modal.tsx",
-                                lineNumber: 164,
+                                lineNumber: 175,
                                 columnNumber: 13
                             }, this),
-                            vehicle.description && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "space-y-2",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                        className: "font-semibold text-sm uppercase text-zinc-400",
-                                        children: "Descrição"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/vehicle-details-modal.tsx",
-                                        lineNumber: 179,
-                                        columnNumber: 17
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-sm text-zinc-300 leading-relaxed",
-                                        children: vehicle.description
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/vehicle-details-modal.tsx",
-                                        lineNumber: 180,
-                                        columnNumber: 17
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "pt-4",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                    onClick: handleWhatsApp,
+                                    className: "w-full bg-[#ffcc00] text-black hover:bg-[#ffcc00]/90 text-lg font-black h-16 rounded-2xl shadow-[0_0_20px_rgba(255,204,0,0.15)] transition-all hover:scale-[1.01]",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
+                                            className: "h-6 w-6 mr-3 fill-current"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/vehicle-details-modal.tsx",
+                                            lineNumber: 206,
+                                            columnNumber: 17
+                                        }, this),
+                                        "NEGOCIAR AGORA"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/vehicle-details-modal.tsx",
+                                    lineNumber: 202,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "[project]/components/vehicle-details-modal.tsx",
-                                lineNumber: 178,
-                                columnNumber: 15
-                            }, this),
-                            vehicle.features && vehicle.features.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "space-y-2",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                        className: "font-semibold text-sm uppercase text-zinc-400",
-                                        children: "Opcionais"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/vehicle-details-modal.tsx",
-                                        lineNumber: 188,
-                                        columnNumber: 17
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex flex-wrap gap-2",
-                                        children: vehicle.features.map((feature, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
-                                                variant: "secondary",
-                                                className: "bg-white/5 text-white hover:bg-white/10 border-white/10",
-                                                children: feature
-                                            }, idx, false, {
-                                                fileName: "[project]/components/vehicle-details-modal.tsx",
-                                                lineNumber: 191,
-                                                columnNumber: 21
-                                            }, this))
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/vehicle-details-modal.tsx",
-                                        lineNumber: 189,
-                                        columnNumber: 17
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/vehicle-details-modal.tsx",
-                                lineNumber: 187,
-                                columnNumber: 15
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                                onClick: handleWhatsApp,
-                                className: "w-full bg-[#ffcc00] text-black hover:bg-[#ffcc00]/90 text-lg font-bold h-14",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
-                                        className: "h-5 w-5 mr-2"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/vehicle-details-modal.tsx",
-                                        lineNumber: 207,
-                                        columnNumber: 15
-                                    }, this),
-                                    "Tenho Interesse"
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/vehicle-details-modal.tsx",
-                                lineNumber: 203,
+                                lineNumber: 201,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/vehicle-details-modal.tsx",
-                        lineNumber: 119,
+                        lineNumber: 120,
                         columnNumber: 11
                     }, this)
                 ]

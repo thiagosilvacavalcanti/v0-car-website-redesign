@@ -69,10 +69,10 @@ export function VehicleDetailsModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto p-0 border-none bg-black text-white">
-        <div className="grid grid-cols-1 md:grid-cols-2">
+      <DialogContent className="max-w-4xl max-h-[95vh] overflow-y-auto p-0 border-none bg-black text-white sm:rounded-xl">
+        <div className="flex flex-col">
           {/* Carousel Section */}
-          <div className="relative h-[300px] md:h-full min-h-[400px] bg-zinc-900">
+          <div className="relative w-full aspect-video md:aspect-[16/9] lg:aspect-[21/9] bg-zinc-900 overflow-hidden">
             {allImages.length > 0 ? (
               <>
                 <Image
@@ -80,27 +80,28 @@ export function VehicleDetailsModal({
                   alt={`${vehicle.brand} ${vehicle.model}`}
                   fill
                   className="object-cover"
+                  priority
                 />
                 {allImages.length > 1 && (
                   <>
                     <button
                       onClick={prevImage}
-                      className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white p-2 rounded-full transition-colors"
+                      className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-1.5 sm:p-2 rounded-full transition-colors z-10"
                     >
-                      <ChevronLeft className="h-6 w-6" />
+                      <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6" />
                     </button>
                     <button
                       onClick={nextImage}
-                      className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white p-2 rounded-full transition-colors"
+                      className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-1.5 sm:p-2 rounded-full transition-colors z-10"
                     >
-                      <ChevronRight className="h-6 w-6" />
+                      <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />
                     </button>
-                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
                       {allImages.map((_, index) => (
                         <div
                           key={index}
-                          className={`h-2 w-2 rounded-full ${
-                            index === currentImageIndex ? "bg-primary" : "bg-white/50"
+                          className={`h-1.5 w-1.5 rounded-full transition-all ${
+                            index === currentImageIndex ? "bg-primary w-4" : "bg-white/30"
                           }`}
                         />
                       ))}
@@ -116,97 +117,96 @@ export function VehicleDetailsModal({
           </div>
 
           {/* Details Section */}
-          <div className="p-6 md:p-8 space-y-6">
-            <div>
-              <DialogHeader>
-                <div className="flex items-center gap-2 mb-2">
-                  <Badge className="bg-[#ffcc00] text-black hover:bg-[#ffcc00]/90">
-                    Disponível
+          <div className="p-5 sm:p-8 space-y-6 sm:space-y-8">
+            <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+              <div className="space-y-2">
+                <div className="flex items-center gap-2">
+                  <Badge className="bg-[#ffcc00] text-black hover:bg-[#ffcc00]/90 font-bold">
+                    ESTOQUE
                   </Badge>
-                  {vehicle.year >= 2023 && (
+                  {vehicle.year >= 2024 && (
                     <Badge variant="outline" className="border-white text-white">
-                      Novo
+                      NOVO
                     </Badge>
                   )}
                 </div>
-                <DialogTitle className="text-3xl font-bold">
+                <h2 className="text-3xl sm:text-4xl font-black uppercase tracking-tighter">
                   {vehicle.brand} {vehicle.model}
-                </DialogTitle>
-              </DialogHeader>
-              <p className="text-4xl font-bold text-[#ffcc00] mt-4">
-                {new Intl.NumberFormat("pt-BR", {
-                  style: "currency",
-                  currency: "BRL",
-                }).format(vehicle.price)}
-              </p>
-            </div>
-
-            <div className="grid grid-cols-3 gap-4 py-6 border-y border-white/10">
-              <div className="flex flex-col items-center text-center gap-1">
-                <Calendar className="h-5 w-5 text-[#ffcc00]" />
-                <span className="text-xs text-zinc-400 uppercase">Ano</span>
-                <span className="font-semibold">{vehicle.year}</span>
-              </div>
-              <div className="flex flex-col items-center text-center gap-1">
-                <Gauge className="h-5 w-5 text-[#ffcc00]" />
-                <span className="text-xs text-zinc-400 uppercase">KM</span>
-                <span className="font-semibold">
-                  {vehicle.mileage.toLocaleString("pt-BR")}
-                </span>
-              </div>
-              <div className="flex flex-col items-center text-center gap-1">
-                <Fuel className="h-5 w-5 text-[#ffcc00]" />
-                <span className="text-xs text-zinc-400 uppercase">Tipo</span>
-                <span className="font-semibold">{vehicle.fuel_type}</span>
-              </div>
-            </div>
-
-            <div className="space-y-4">
-              <div className="flex items-center gap-2 text-[#ffcc00]">
-                <Info className="h-5 w-5" />
-                <h4 className="font-semibold">Informações do Veículo</h4>
-              </div>
-              <div className="grid grid-cols-2 gap-y-2 text-sm">
-                <p className="text-zinc-400">Câmbio:</p>
-                <p className="text-right font-medium">{vehicle.transmission || "N/A"}</p>
-                <p className="text-zinc-400">Cor:</p>
-                <p className="text-right font-medium">{vehicle.color || "N/A"}</p>
-              </div>
-            </div>
-
-            {vehicle.description && (
-              <div className="space-y-2">
-                <h4 className="font-semibold text-sm uppercase text-zinc-400">Descrição</h4>
-                <p className="text-sm text-zinc-300 leading-relaxed">
-                  {vehicle.description}
-                </p>
-              </div>
-            )}
-
-            {vehicle.features && vehicle.features.length > 0 && (
-              <div className="space-y-2">
-                <h4 className="font-semibold text-sm uppercase text-zinc-400">Opcionais</h4>
-                <div className="flex flex-wrap gap-2">
-                  {vehicle.features.map((feature, idx) => (
-                    <Badge
-                      key={idx}
-                      variant="secondary"
-                      className="bg-white/5 text-white hover:bg-white/10 border-white/10"
-                    >
-                      {feature}
-                    </Badge>
-                  ))}
+                </h2>
+                <div className="flex items-center gap-4 text-zinc-400 font-medium">
+                  <span>{vehicle.year}</span>
+                  <span className="h-1 w-1 bg-zinc-700 rounded-full" />
+                  <span>{vehicle.mileage.toLocaleString("pt-BR")} KM</span>
                 </div>
               </div>
-            )}
+              <div className="text-left sm:text-right">
+                <p className="text-4xl sm:text-5xl font-black text-[#ffcc00] tracking-tighter">
+                  {new Intl.NumberFormat("pt-BR", {
+                    style: "currency",
+                    currency: "BRL",
+                  }).format(vehicle.price)}
+                </p>
+              </div>
+            </div>
 
-            <Button
-              onClick={handleWhatsApp}
-              className="w-full bg-[#ffcc00] text-black hover:bg-[#ffcc00]/90 text-lg font-bold h-14"
-            >
-              <Phone className="h-5 w-5 mr-2" />
-              Tenho Interesse
-            </Button>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 sm:p-6 bg-zinc-900/50 rounded-2xl border border-white/5">
+              <div className="flex flex-col items-center text-center gap-1">
+                <Calendar className="h-5 w-5 text-[#ffcc00] mb-1" />
+                <span className="text-[10px] text-zinc-500 uppercase font-bold tracking-widest">Ano</span>
+                <span className="text-sm font-bold">{vehicle.year}</span>
+              </div>
+              <div className="flex flex-col items-center text-center gap-1">
+                <Gauge className="h-5 w-5 text-[#ffcc00] mb-1" />
+                <span className="text-[10px] text-zinc-500 uppercase font-bold tracking-widest">Quilometragem</span>
+                <span className="text-sm font-bold">{vehicle.mileage.toLocaleString("pt-BR")}</span>
+              </div>
+              <div className="flex flex-col items-center text-center gap-1">
+                <Fuel className="h-5 w-5 text-[#ffcc00] mb-1" />
+                <span className="text-[10px] text-zinc-500 uppercase font-bold tracking-widest">Combustível</span>
+                <span className="text-sm font-bold">{vehicle.fuel_type}</span>
+              </div>
+              <div className="flex flex-col items-center text-center gap-1">
+                <Info className="h-5 w-5 text-[#ffcc00] mb-1" />
+                <span className="text-[10px] text-zinc-500 uppercase font-bold tracking-widest">Câmbio</span>
+                <span className="text-sm font-bold">{vehicle.transmission || "N/A"}</span>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div className="space-y-4">
+                <h4 className="text-xs font-black uppercase tracking-[0.2em] text-zinc-500">Descrição</h4>
+                <p className="text-sm text-zinc-300 leading-relaxed font-medium">
+                  {vehicle.description || "Veículo em excelente estado de conservação, revisado e com garantia SML Veículos."}
+                </p>
+              </div>
+
+              {vehicle.features && vehicle.features.length > 0 && (
+                <div className="space-y-4">
+                  <h4 className="text-xs font-black uppercase tracking-[0.2em] text-zinc-500">Opcionais e Itens</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {vehicle.features.map((feature, idx) => (
+                      <Badge
+                        key={idx}
+                        variant="secondary"
+                        className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700 border-none px-3 py-1 text-[11px] font-bold"
+                      >
+                        {feature.toUpperCase()}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <div className="pt-4">
+              <Button
+                onClick={handleWhatsApp}
+                className="w-full bg-[#ffcc00] text-black hover:bg-[#ffcc00]/90 text-lg font-black h-16 rounded-2xl shadow-[0_0_20px_rgba(255,204,0,0.15)] transition-all hover:scale-[1.01]"
+              >
+                <Phone className="h-6 w-6 mr-3 fill-current" />
+                NEGOCIAR AGORA
+              </Button>
+            </div>
           </div>
         </div>
       </DialogContent>
