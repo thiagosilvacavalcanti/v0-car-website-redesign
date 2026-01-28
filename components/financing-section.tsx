@@ -6,8 +6,8 @@ export function FinancingSection() {
   const features = [
     {
       icon: CreditCard,
-      title: 'Aprovação Rápida',
-      description: 'Análise de crédito em até 24 horas',
+      title: 'Aprovação rapida',
+      description: 'Análise de crédito imediata',
     },
     {
       icon: Percent,
