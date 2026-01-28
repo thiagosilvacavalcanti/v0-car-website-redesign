@@ -1,16 +1,14 @@
-[00:00:04.610] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:04.977] Server  LOG      ✓ Ready in 4s
-[00:00:08.912] Server  LOG      ○ Compiling / ...
-[00:00:14.672] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:14.672] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:14.672] Browser LOG     %c[Vercel Web Analytics]%c [pageview] https://24238bb9-2a63-4815-b431-6a2411fd895a-00-fg1wrdnc06gi.riker.replit.dev/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"https://24238bb9-2a63-4815-b431-6a2411fd895a-00-fg1wrdnc06gi.riker.replit.dev/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1769580107485}
-[00:00:15.436] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:15.436] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:15.436] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:15.436] Browser LOG     %c[Vercel Web Analytics]%c [pageview] https://24238bb9-2a63-4815-b431-6a2411fd895a-00-fg1wrdnc06gi.riker.replit.dev/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"https://24238bb9-2a63-4815-b431-6a2411fd895a-00-fg1wrdnc06gi.riker.replit.dev/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1769580107653}
-[01:49:39.412] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:49:39.412] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[01:49:39.412] Browser LOG     %c[Vercel Web Analytics]%c [pageview] https://24238bb9-2a63-4815-b431-6a2411fd895a-00-fg1wrdnc06gi.riker.replit.dev/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"https://24238bb9-2a63-4815-b431-6a2411fd895a-00-fg1wrdnc06gi.riker.replit.dev/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1769586671973}
-[04:07:12.842] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[04:07:12.842] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[04:07:12.842] Browser LOG     %c[Vercel Web Analytics]%c [pageview] https://24238bb9-2a63-4815-b431-6a2411fd895a-00-fg1wrdnc06gi.riker.replit.dev/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"https://24238bb9-2a63-4815-b431-6a2411fd895a-00-fg1wrdnc06gi.riker.replit.dev/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1769594925329}
+[00:00:01.950] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:02.442] Server  LOG      ✓ Ready in 1934ms
+[00:00:06.339] Server  LOG      ○ Compiling / ...
+[00:00:09.491] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:09.913] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:09.913] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:09.913] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://127.0.0.1:5000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://127.0.0.1:5000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1769595049127}
+[00:00:10.772] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:10.772] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:10.772] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:10.772] Browser LOG     %c[Vercel Web Analytics]%c [pageview] https://24238bb9-2a63-4815-b431-6a2411fd895a-00-fg1wrdnc06gi.riker.replit.dev/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"https://24238bb9-2a63-4815-b431-6a2411fd895a-00-fg1wrdnc06gi.riker.replit.dev/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1769595072656}
+[00:00:11.353] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:11.353] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:11.353] Browser LOG     %c[Vercel Web Analytics]%c [pageview] https://24238bb9-2a63-4815-b431-6a2411fd895a-00-fg1wrdnc06gi.riker.replit.dev/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"https://24238bb9-2a63-4815-b431-6a2411fd895a-00-fg1wrdnc06gi.riker.replit.dev/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1769595072686}

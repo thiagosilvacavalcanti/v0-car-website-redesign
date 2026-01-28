@@ -352,7 +352,7 @@ function Header() {
                                 alt: "SML Veículos",
                                 width: 180,
                                 height: 60,
-                                className: "h-14 w-auto brightness-0 invert",
+                                className: "h-14 w-auto",
                                 priority: true
                             }, void 0, false, {
                                 fileName: "[project]/components/header.tsx",
