@@ -8,7 +8,7 @@ export function Header() {
   const navItems = [
     { name: "Estoque", href: "#estoque" },
     { name: "Venda seu Carro", href: "#venda" },
-    { name: "Financie", href: "#financie" },
+    { name: "Financiamento", href: "#financie" },
   ]
 
   const phoneNumber = "5511958042257"
