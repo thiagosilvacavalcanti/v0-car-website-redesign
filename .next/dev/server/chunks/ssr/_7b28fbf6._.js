@@ -210,7 +210,7 @@ function Header() {
             href: "#venda"
         },
         {
-            name: "Financie",
+            name: "Financiamento",
             href: "#financie"
         }
     ];
