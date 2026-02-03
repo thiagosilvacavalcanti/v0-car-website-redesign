@@ -127,3 +127,7 @@ button{
     @apply bg-background text-foreground;
   }
 }
+
+.button-fale{
+  cursor: pointer;
+}

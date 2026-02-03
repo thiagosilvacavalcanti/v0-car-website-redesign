@@ -56,7 +56,7 @@ export function Header() {
           </nav>
 
           <div className="hidden lg:flex items-center gap-4">
-            <Button  onClick={handleClick}  variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black">
+            <Button  onClick={handleClick}  variant="outline" size="lg" className="button-fale border-white text-black hover:bg-white hover:text-black">
               <Phone className="h-4 w-4 mr-2" />
               Fale Conosco
             </Button>
