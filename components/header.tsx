@@ -22,7 +22,7 @@ export function Header() {
         <div className="container mx-auto px-4 flex items-center justify-between text-sm">
           <div className="flex items-center gap-2">
             <Clock className="h-4 w-4" />
-            <span>Seg - Sex: 8h às 18h | Sáb: 8h às 12h</span>
+            <span>Seg - Sex: 9h às 18h | Sáb: 10h às 14h</span>
           </div>
           <div className="hidden md:flex items-center gap-4">
             <div className="flex items-center gap-2">
