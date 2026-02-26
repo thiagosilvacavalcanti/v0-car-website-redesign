@@ -40,7 +40,7 @@ export function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
-            <Image src="/sml-logo.jpeg" alt="SML Veículos" width={180} height={60} className="w-auto logo-header" priority />
+            <Image src="/sml-logo.jpeg" alt="SML Veículos" width={180} height={60} className="h-20 w-auto logo-header" priority />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-6">
