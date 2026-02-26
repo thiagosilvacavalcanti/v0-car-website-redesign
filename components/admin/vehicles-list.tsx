@@ -9,6 +9,7 @@ import { Edit, Trash2, Eye } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
+import { deleteVehicleImages, deleteStorageFile, VEHICLE_BUCKET } from '@/lib/supabase/storage'
 
 type Vehicle = {
   id: string
@@ -23,6 +24,7 @@ type Vehicle = {
   status: string
   featured: boolean
   image_url: string | null
+  images: string[] | null
 }
 
 export function VehiclesList() {
@@ -53,7 +55,20 @@ export function VehiclesList() {
 
   const handleDelete = async (id: string) => {
     if (!confirm('Tem certeza que deseja deletar este veículo?')) return
-    
+
+    // Encontrar o veiculo para pegar as URLs das imagens
+    const vehicle = vehicles.find((v) => v.id === id)
+    if (vehicle) {
+      const allImageUrls: string[] = []
+      if (vehicle.image_url) allImageUrls.push(vehicle.image_url)
+      if (vehicle.images) allImageUrls.push(...vehicle.images)
+
+      // Deletar imagens do Supabase Storage (fire-and-forget)
+      if (allImageUrls.length > 0) {
+        deleteVehicleImages(allImageUrls).catch(() => {})
+      }
+    }
+
     await supabase.from('vehicles').delete().eq('id', id)
     loadVehicles()
   }

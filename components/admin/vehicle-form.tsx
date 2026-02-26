@@ -12,6 +12,9 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card } from "@/components/ui/card"
 import { Switch } from "@/components/ui/switch"
 import { AlertCircle, Save } from "lucide-react"
+import { ImageUpload } from "@/components/admin/image-upload"
+import { MultiImageUpload } from "@/components/admin/multi-image-upload"
+import { uploadVehicleImage } from "@/lib/supabase/storage"
 
 type VehicleFormProps = {
   vehicle?: any
@@ -34,7 +37,7 @@ export function VehicleForm({ vehicle }: VehicleFormProps) {
     description: vehicle?.description || "",
     features: vehicle?.features?.join(", ") || "",
     image_url: vehicle?.image_url || "",
-    images: vehicle?.images?.join("\n") || "",
+    images: (vehicle?.images || []) as string[],
     status: vehicle?.status || "available",
     featured: vehicle?.featured || false,
   })
@@ -63,10 +66,7 @@ export function VehicleForm({ vehicle }: VehicleFormProps) {
           .split(",")
           .map((f) => f.trim())
           .filter(Boolean),
-        images: formData.images
-          .split("\n")
-          .map((i) => i.trim())
-          .filter(Boolean),
+        images: formData.images,
       }
 
       if (vehicle) {
@@ -211,34 +211,20 @@ export function VehicleForm({ vehicle }: VehicleFormProps) {
             </div>
           </div>
 
-          <div className="space-y-2">
-            <Label htmlFor="image_url">URL da Imagem Principal *</Label>
-            <Input
-              id="image_url"
-              type="url"
-              value={formData.image_url}
-              onChange={(e) => setFormData({ ...formData, image_url: e.target.value })}
-              placeholder="https://exemplo.com/imagem-principal.jpg"
-              required
-            />
-            <p className="text-xs text-muted-foreground">
-              Cole a URL completa da imagem (ex: de um serviço como Imgur, Google Drive, etc.)
-            </p>
-          </div>
+          <ImageUpload
+            label="Imagem Principal"
+            required
+            value={formData.image_url}
+            onChange={(url) => setFormData({ ...formData, image_url: url })}
+            onUpload={(file) => uploadVehicleImage(file, vehicle?.id)}
+          />
 
-          <div className="space-y-2">
-            <Label htmlFor="images">URLs de Imagens Adicionais (uma por linha)</Label>
-            <Textarea
-              id="images"
-              value={formData.images}
-              onChange={(e) => setFormData({ ...formData, images: e.target.value })}
-              placeholder="https://exemplo.com/imagem1.jpg&#10;https://exemplo.com/imagem2.jpg&#10;https://exemplo.com/imagem3.jpg"
-              rows={4}
-            />
-            <p className="text-xs text-muted-foreground">
-              Cole uma URL por linha. Essas imagens aparecerão na galeria do veículo.
-            </p>
-          </div>
+          <MultiImageUpload
+            label="Imagens Adicionais (Galeria)"
+            value={formData.images}
+            onChange={(urls) => setFormData({ ...formData, images: urls })}
+            onUpload={(file) => uploadVehicleImage(file, vehicle?.id)}
+          />
 
           <div className="space-y-2">
             <Label htmlFor="description">Descrição</Label>
