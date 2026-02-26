@@ -132,6 +132,3 @@ button{
   cursor: pointer;
 }
 
-.logo-header{
-  height: calc(var(--spacing) * 20);
-}
