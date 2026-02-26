@@ -13,8 +13,8 @@ export function HeroSection() {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">
-            Encontre o Carro dos{' '}
-            <span className="text-primary">Seus Sonhos</span>
+            Encontre o carro dos{' '}
+            <span className="text-primary">seus Sonhos</span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-secondary-foreground/80 text-pretty leading-relaxed">
