@@ -16,7 +16,7 @@ export function SellYourCar() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-4xl font-bold mb-6 text-balance">
-              Venda seu Carro de Forma Rápida e Segura
+              Venda seu carro de forma aápida e segura
             </h2>
             <p className="text-xl text-muted-foreground mb-8 text-pretty leading-relaxed">
               Oferecemos a melhor avaliação do mercado para o seu veículo. 
