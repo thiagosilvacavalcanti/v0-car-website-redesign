@@ -69,10 +69,13 @@ export function VehicleDetailsModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl max-h-[95vh] overflow-y-auto p-0 border-none bg-black text-white sm:rounded-xl">
+      <DialogContent className="max-w-4xl max-h-[100dvh] sm:max-h-[95vh] overflow-y-auto p-0 border-none bg-black text-white sm:rounded-xl w-full sm:w-[calc(100%-2rem)] rounded-none sm:rounded-lg">
+        <DialogHeader className="sr-only">
+          <DialogTitle>{vehicle.brand} {vehicle.model}</DialogTitle>
+        </DialogHeader>
         <div className="flex flex-col">
           {/* Carousel Section */}
-          <div className="relative w-full aspect-video md:aspect-[16/9] lg:aspect-[21/9] bg-zinc-900 overflow-hidden">
+          <div className="relative w-full aspect-[4/3] sm:aspect-video md:aspect-[16/9] bg-zinc-900 overflow-hidden shrink-0">
             {allImages.length > 0 ? (
               <>
                 <Image
@@ -117,7 +120,7 @@ export function VehicleDetailsModal({
           </div>
 
           {/* Details Section */}
-          <div className="p-5 sm:p-8 space-y-6 sm:space-y-8">
+          <div className="p-4 sm:p-8 space-y-5 sm:space-y-8">
             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
@@ -130,7 +133,7 @@ export function VehicleDetailsModal({
                     </Badge>
                   )}
                 </div>
-                <h2 className="text-3xl sm:text-4xl font-black uppercase tracking-tighter">
+                <h2 className="text-2xl sm:text-4xl font-black uppercase tracking-tighter">
                   {vehicle.brand} {vehicle.model}
                 </h2>
                 <div className="flex items-center gap-4 text-zinc-400 font-medium">
@@ -140,7 +143,7 @@ export function VehicleDetailsModal({
                 </div>
               </div>
               <div className="text-left sm:text-right">
-                <p className="text-4xl sm:text-5xl font-black text-[#ffcc00] tracking-tighter">
+                <p className="text-3xl sm:text-5xl font-black text-[#ffcc00] tracking-tighter">
                   {new Intl.NumberFormat("pt-BR", {
                     style: "currency",
                     currency: "BRL",
