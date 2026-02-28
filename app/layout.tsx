@@ -1,9 +1,14 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { WhatsAppFloatButton } from "@/components/whatsapp-float-button"
+import dynamic from "next/dynamic"
+
+const VercelAnalytics = dynamic(
+  () => import("@vercel/analytics/next").then((mod) => mod.Analytics),
+  { ssr: false }
+)
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
@@ -41,7 +46,7 @@ export default function RootLayout({
       <body className={`font-sans antialiased`}>
         {children}
         <WhatsAppFloatButton />
-        <Analytics />
+        <VercelAnalytics />
       </body>
     </html>
   )
