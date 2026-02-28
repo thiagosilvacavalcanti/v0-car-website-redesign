@@ -14,6 +14,7 @@ export function VehicleGrid() {
   const [vehicles, setVehicles] = useState<any[]>([])
   const [selectedVehicle, setSelectedVehicle] = useState<any | null>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [mostrarTodos, setMostrarTodos] = useState(false)
 
   const supabase = createBrowserClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -22,17 +23,22 @@ export function VehicleGrid() {
 
   useEffect(() => {
     async function fetchVehicles() {
-      const { data } = await supabase
+      let query = supabase
         .from('vehicles')
         .select('*')
         .eq('status', 'available')
         .order('created_at', { ascending: false })
-        .limit(6)
-      
+
+      if (!mostrarTodos) {
+        query = query.limit(6)
+      }
+
+      const { data } = await query
       if (data) setVehicles(data)
     }
+
     fetchVehicles()
-  }, [])
+  }, [mostrarTodos])
 
   const openModal = (vehicle: any) => {
     setSelectedVehicle(vehicle)
@@ -65,7 +71,7 @@ export function VehicleGrid() {
                   </Badge>
                 )}
               </div>
-              
+
               <CardContent className="p-6">
                 <h3 className="text-2xl font-bold mb-2">{vehicle.brand} {vehicle.model}</h3>
                 <p className="text-3xl font-bold text-primary mb-4">
@@ -74,7 +80,7 @@ export function VehicleGrid() {
                     currency: 'BRL'
                   }).format(vehicle.price)}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-1">
                     <Calendar className="h-4 w-4" />
@@ -90,7 +96,7 @@ export function VehicleGrid() {
                   </div>
                 </div>
               </CardContent>
-              
+
               <CardFooter className="p-6 pt-0 gap-2">
                 <Button className="flex-1 bg-[#ffcc00] text-black hover:bg-[#ffcc00]/90">Ver Detalhes</Button>
                 <Button variant="outline" className="flex-1" onClick={(e) => {
@@ -103,8 +109,20 @@ export function VehicleGrid() {
         </div>
 
         <div className="text-center mt-12">
-          <Button size="lg" variant="outline" className="px-8 border-black text-black hover:bg-black hover:text-white">
-            Ver Todo o Estoque
+          <Button
+            size="lg"
+            variant="outline"
+            className="px-8 border-black text-black hover:bg-black hover:text-white"
+            onClick={() => {
+              if (mostrarTodos) {
+                // Só faz scroll quando estiver mostrando todos
+                document.getElementById("estoque")?.scrollIntoView({ behavior: "smooth" })
+              }
+
+              setMostrarTodos(!mostrarTodos)
+            }}
+          >
+            {mostrarTodos ? "Mostrar Menos" : "Ver Todo o Estoque"}
           </Button>
         </div>
       </div>

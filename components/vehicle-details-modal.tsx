@@ -69,7 +69,7 @@ export function VehicleDetailsModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl max-h-[100dvh] sm:max-h-[95vh] overflow-y-auto p-0 border-none bg-black text-white sm:rounded-xl w-full sm:w-[calc(100%-2rem)] rounded-none sm:rounded-lg">
+      <DialogContent className="modal-detalhes max-w-4xl max-h-[100dvh] sm:max-h-[95vh] overflow-y-auto p-0 border-none bg-black text-white sm:rounded-xl w-full sm:w-[calc(100%-2rem)] rounded-none sm:rounded-lg">
         <DialogHeader className="sr-only">
           <DialogTitle>{vehicle.brand} {vehicle.model}</DialogTitle>
         </DialogHeader>
@@ -82,7 +82,7 @@ export function VehicleDetailsModal({
                   src={allImages[currentImageIndex]}
                   alt={`${vehicle.brand} ${vehicle.model}`}
                   fill
-                  className="object-cover"
+                  className="object-cover images-car-detalhe"
                   priority
                 />
                 {allImages.length > 1 && (
@@ -103,9 +103,8 @@ export function VehicleDetailsModal({
                       {allImages.map((_, index) => (
                         <div
                           key={index}
-                          className={`h-1.5 w-1.5 rounded-full transition-all ${
-                            index === currentImageIndex ? "bg-primary w-4" : "bg-white/30"
-                          }`}
+                          className={`h-1.5 w-1.5 rounded-full transition-all ${index === currentImageIndex ? "bg-primary w-4" : "bg-white/30"
+                            }`}
                         />
                       ))}
                     </div>
