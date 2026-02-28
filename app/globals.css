@@ -119,7 +119,17 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.modal-detalhes {
+  max-width: fit-content;
+}
+
+.images-car-detalhe {
+  margin: 0 auto;
+  width: fit-content !important;
 }

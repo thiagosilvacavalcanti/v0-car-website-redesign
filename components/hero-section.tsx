@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from '@/components/ui/button'
 import { ChevronRight } from 'lucide-react'
 
@@ -22,12 +24,16 @@ export function HeroSection() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
-               <a href="#estoque" >
-            <Button  style={{ cursor: 'pointer' }} size="lg" className="text-lg px-8 py-6">
+            <Button
+              size="lg"
+              className="text-lg px-8 py-6 cursor-pointer"
+              onClick={() => {
+                document.getElementById("estoque")?.scrollIntoView({ behavior: "smooth" })
+              }}
+            >
               Ver Estoque
               <ChevronRight className="ml-2 h-5 w-5" />
             </Button>
-              </a>
             <Button size="lg" variant="outline" className="text-black text-lg px-8 py-6">
               Venda seu Carro
             </Button>

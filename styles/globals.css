@@ -39,8 +39,8 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
-button{
-  color:#000!important;
+button {
+  color: #000 !important;
 }
 
 .dark {
@@ -123,12 +123,12 @@ button{
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
 
-.button-fale{
+.button-fale {
   cursor: pointer;
 }
-
